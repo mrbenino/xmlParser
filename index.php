@@ -17,7 +17,7 @@ if (file_exists('200406104654_151394_2.XML')) {
         foreach ($postObject->AC as $value) {
             $model = objectToMyModel($value,$model);
         }
-        array_push($arrayModels,(object)$model);
+        array_push($arrayModels,/*(object)*/$model); // casting to an object is optional
     }
     // print_r($arrayModels);
     //objectToMyModel($array->POSTOBJECT->AC->SMDOCUMENTS);
