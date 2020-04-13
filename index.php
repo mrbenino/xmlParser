@@ -19,7 +19,7 @@ if (file_exists('200406104654_151394_2.XML')) {
         }
         array_push($arrayModels,(object)$model);
     }
-    print_r($arrayModels);
+    // print_r($arrayModels);
     //objectToMyModel($array->POSTOBJECT->AC->SMDOCUMENTS);
 } else {exit('Не удалось открыть файл 200406104654_151394_2.XML.');}
 ?>
